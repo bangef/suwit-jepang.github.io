@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permainan Suwit Jepang</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="container">
+        <!-- beranda  -->
+        <div id="beranda" class="nonhide">
+            <div class="container-2 color-hitam text-center">
+                <!-- heading -->
+                <div class="row margin-bottom35px">
+                    <div class="col-md-12 col-sm-12 text-white">
+                        <h1 class="font-heading">Permainan Suwit Jepang</h1>
+                        <hr />
+                    </div>
+                </div>
+                <!-- main -->
+                <div class="row margin-bottom35px">
+                    <div class="col-md-4 col-sm-4 text-center text-white my-3" id="gunting">
+                        <img src="./img/gunting.png" alt="gunting">
+                        <p class="font-main">
+                            Gunting
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-sm-4 text-center text-white my-3" id="batu">
+                        <img src="./img/batu.png" alt="batu">
+                        <p class="font-main">
+                            Batu
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-sm-4 text-center text-white my-3" id="kertas">
+                        <img src="./img/kertas.png" alt="kertas">
+                        <p class="font-main">Kertas</p>
+                    </div>
+                </div>
+                <!-- button, input nama -->
+                <div class="row margin-bottom35px">
+                    <div class="col-md-12 col-sm-12 text-center">
+                        <button onclick="mulaiPermainan()"
+                            class="btn btn-md btn-sm color-kuning font-btn my-1">Mulai</button>
+                    </div>
+                </div>
+                <!-- footer -->
+                <footer class="row justify-content-center">
+                    <div class="footer">
+                        made by bangef
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <!-- end -->
+
+        <!-- prepare -->
+        <div id="prepare" class="hide">
+            <!-- prepare  -->
+            <div class="container-2 color-hitam text-center">
+                <!-- heading -->
+                <div class="row margin-bottom35px">
+                    <div class="col-md-12 col-sm-12 text-white">
+                        <h1 class="font-heading">Permainan Suwit Jepang</h1>
+                        <hr />
+                    </div>
+                </div>
+                <!-- main -->
+                <div class="row margin-bottom35px">
+                    <div class="col-md-4 col-sm-4 text-center text-white my-3">
+                        <img src="./img/user.png" alt="userPemain">
+                        <p class="font-main">
+                            Anda
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-sm-4 text-center text-white my-3">
+                        <img src="./img/vs.png" alt="versus">
+                    </div>
+                    <div class="col-md-4 col-sm-4 text-center text-white my-3">
+                        <img src="./img/com.png" alt="komputer">
+                        <p class="font-main">Komputer</p>
+                    </div>
+                </div>
+                <!-- button, input nama -->
+                <div class="row margin-bottom35px">
+                    <div class="col-md-12 col-sm-12 text-center">
+                        <button onclick="pilihJawaban()"
+                            class="btn btn-md btn-sm color-kuning font-btn my-1">Mulai</button>
+                    </div>
+                </div>
+                <!-- footer -->
+                <footer class="row justify-content-center">
+                    <div class="footer">
+                        made by bangef
+                    </div>
+                </footer>
+            </div>
+            <!-- end -->
+        </div>
+
+        <!-- pilih jawaban -->
+        <div id="piliJawa" class="hide">
+            <!-- prepare  -->
+            <div class="container-2 color-hitam text-center">
+                <!-- heading -->
+                <div class="row margin-bottom35px">
+                    <div class="col-md-12 col-sm-12 text-white">
+                        <h1 class="font-heading">Permainan Suwit Jepang</h1>
+                        <hr />
+                    </div>
+                </div>
+                <!-- main -->
+                <div class="row margin-bottom35px">
+                    <div class="col-sm-12 col-md-12 text-center text-white my-3">
+                        <h3>
+                            Anda memilih :
+                        </h3>
+                    </div>
+                </div>
+                <div class="row margin-bottom35px">
+                    <div class="col-md-4 col-sm-4 text-center text-white my-3" id="guntingPiliJawa"
+                        onclick="guntingPiliJawa()">
+                        <img src="./img/gunting.png" alt="gunting">
+                        <p class="font-main">
+                            Gunting
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-sm-4 text-center text-white my-3" id="batuPiliJawa"
+                        onclick="batuPiliJawa()">
+                        <img src="./img/batu.png" alt="batu">
+                        <p class="font-main">
+                            Batu
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-sm-4 text-center text-white my-3" id="kertasPiliJawa"
+                        onclick="kertasPiliJawa()">
+                        <img src="./img/kertas.png" alt="kertas">
+                        <p class="font-main">Kertas</p>
+                    </div>
+                </div>
+
+
+                <!-- hasill -->
+                <!-- hasil anda -->
+                <div class="row margin-bottom35px">
+                    <div class="col-md-12 col-sm-12 text-center text-white my-3 hide" id="hasilPiliJawaGunt">
+                        <img src="./img/gunting.png" alt="gunting">
+                        <p class="font-main">
+                            Gunting
+                        </p>
+                    </div>
+                    <div class="col-md-12 col-sm-12 text-center text-white my-3 hide" id="hasilPiliJawaBatu">
+                        <img src="./img/batu.png" alt="batu">
+                        <p class="font-main">
+                            Batu
+                        </p>
+                    </div>
+                    <div class="col-md-12 col-sm-12 text-center text-white my-3 hide" id="hasilPiliJawaKert">
+                        <img src="./img/kertas.png" alt="kertas">
+                        <p class="font-main">Kertas</p>
+                    </div>
+                </div>
+                <!-- hasil comp -->
+                <div class="row margin-bottom35px">
+                    <div class="col-sm-12 col-md-12 text-center text-white my-3 hide" id="hasilHeadComp">
+                        <h3>
+                            Komputer memilih :
+                        </h3>
+                    </div>
+                </div>
+                <div class="row margin-bottom35px">
+                    <div class="col-md-12 col-sm-12 text-center text-white my-3 hide" id="hasilCompJawaGunt">
+                        <img src="./img/gunting.png" alt="gunting">
+                        <p class="font-main">
+                            Gunting
+                        </p>
+                    </div>
+                    <div class="col-md-12 col-sm-12 text-center text-white my-3 hide" id="hasilCompJawaBatu">
+                        <img src="./img/batu.png" alt="batu">
+                        <p class="font-main">
+                            Batu
+                        </p>
+                    </div>
+                    <div class="col-md-12 col-sm-12 text-center text-white my-3 hide" id="hasilCompJawaKert">
+                        <img src="./img/kertas.png" alt="kertas">
+                        <p class="font-main">Kertas</p>
+                    </div>
+                </div>
+
+                <!-- button, input nama -->
+                <div class="row margin-bottom35px">
+                    <div class="col-md-6 col-sm-6 font-btn my-1 text-center hide" id="pembHasil">
+                        <!-- pemberitahuan hasil -->
+                    </div>
+                    <div class="col-md-6 col-sm-6 text-center hide" id="resetHasil">
+                        <button onclick="resetPermainan()" class="btn btn-md btn-sm color-kuning font-btn my-1">Main
+                            Lagi</button>
+                    </div>
+                </div>
+                <!-- footer -->
+                <footer class="row justify-content-center">
+                    <div class="footer">
+                        made by bangef
+                    </div>
+                </footer>
+            </div>
+            <!-- end -->
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
