@@ -31,15 +31,15 @@
   background-color: #f5df4d;
 }
 
-.text-kuning  {
-    color: #f5df4d;
+.text-kuning {
+  color: #f5df4d;
 }
 
 .text-merah {
-    color: #D2386C;
+  color: #d2386c;
 }
 .text-hijau {
-    color: #00A170;
+  color: #00a170;
 }
 
 /* heading */
@@ -100,20 +100,24 @@ input {
 
 /* menampilkan tiap page */
 .hide {
-    display: none;
+  display: none;
 }
 
 .nonhide {
-    display: block;
+  display: block;
 }
 
 /* page - pilih jawaban */
-#guntingPiliJawa:hover img, #batuPiliJawa:hover img, #kertasPiliJawa:hover img{
-    width: 50%;
+#guntingPiliJawa:hover img,
+#batuPiliJawa:hover img,
+#kertasPiliJawa:hover img {
+  width: 50%;
 }
 
-#guntingPiliJawa:hover p, #batuPiliJawa:hover p, #kertasPiliJawa:hover p{
-    font-weight: bold;
+#guntingPiliJawa:hover p,
+#batuPiliJawa:hover p,
+#kertasPiliJawa:hover p {
+  font-weight: bold;
 }
 
 /* responsive */
@@ -127,6 +131,24 @@ input {
   .container-2 {
     margin: 135px auto;
   }
+
+  /* heading */
+  .font-heading {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: 0em;
+  }
+
+  /* main */
+.font-main {
+  margin: 5px auto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+}
 }
 
 @media (min-width: 768px) {
