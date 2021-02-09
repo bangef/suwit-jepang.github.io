@@ -31,7 +31,6 @@ function pilihJawaban() {
 }
 
 function guntingPiliJawa() {
-    console.log(cariNilaiCom());
     document.getElementById('batuPiliJawa').style.display = 'none';
     document.getElementById('kertasPiliJawa').style.display = 'none';
     document.getElementById('guntingPiliJawa').style.display = 'none';
@@ -66,7 +65,6 @@ function guntingPiliJawa() {
 }
 
 function batuPiliJawa() {
-    console.log(cariNilaiCom());
     document.getElementById('batuPiliJawa').style.display = 'none';
     document.getElementById('kertasPiliJawa').style.display = 'none';
     document.getElementById('guntingPiliJawa').style.display = 'none';
@@ -101,7 +99,6 @@ function batuPiliJawa() {
 }
 
 function kertasPiliJawa() {
-    console.log(cariNilaiCom());
     document.getElementById('batuPiliJawa').style.display = 'none';
     document.getElementById('kertasPiliJawa').style.display = 'none';
     document.getElementById('guntingPiliJawa').style.display = 'none';
