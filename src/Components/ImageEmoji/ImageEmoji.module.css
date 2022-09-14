@@ -1,0 +1,6 @@
+.emoji__hand {
+	position: absolute;
+	width: 100%;
+	min-width: 80px;
+	max-width: 100px;
+}

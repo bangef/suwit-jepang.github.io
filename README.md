@@ -1,3 +1,12 @@
+# Game Suwit Jepang
+
+Refactoring code lama
+
+# User Interface
+
+![User Interface 1](./Mobile%20320.jpg)
+![User Interface 2](./Mobile%20320.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

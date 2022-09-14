@@ -1,0 +1,25 @@
+.layout {
+	background-color: #2a0944;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.layout__image__wave__top {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	max-height: 80px;
+}
+
+.layout__image__wave__bottom {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 100%;
+	max-height: 80px;
+}
